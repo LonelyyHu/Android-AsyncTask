@@ -16,6 +16,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".AsyncTaskActivity" />
+        <activity android:name=".HandlerActivity" />
+        <activity android:name=".HandlerThreadActivity" />
+        <activity android:name=".ExecutorServiceActivity" />
+
+        <service
+            android:name=".ProgressIntentService"
+            android:exported="false" />
+
+        <activity android:name=".IntentServiceActivity"></activity>
     </application>
 
 </manifest>

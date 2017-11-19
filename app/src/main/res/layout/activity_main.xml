@@ -6,13 +6,55 @@
     android:layout_height="match_parent"
     tools:context="com.lonelyyhu.exercise.asynctask.MainActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/btn_asynctask"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:onClick="onClick"
+        android:text="AsyncTask"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_handler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="onClick"
+        android:text="Handler"
+        app:layout_constraintStart_toStartOf="@+id/btn_asynctask"
+        app:layout_constraintTop_toBottomOf="@+id/btn_asynctask" />
+
+    <Button
+        android:id="@+id/btn_handler_thread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="onClick"
+        android:text="Handler Thread"
+        app:layout_constraintStart_toStartOf="@+id/btn_asynctask"
+        app:layout_constraintTop_toBottomOf="@+id/btn_handler" />
+
+    <Button
+        android:id="@+id/btn_executor_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="onClick"
+        android:text="Executor Service"
+        app:layout_constraintStart_toStartOf="@+id/btn_asynctask"
+        app:layout_constraintTop_toBottomOf="@+id/btn_handler_thread" />
+
+    <Button
+        android:id="@+id/btn_intent_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="onClick"
+        android:text="intent Service"
+        app:layout_constraintStart_toStartOf="@+id/btn_asynctask"
+        app:layout_constraintTop_toBottomOf="@+id/btn_executor_service" />
 
 </android.support.constraint.ConstraintLayout>
