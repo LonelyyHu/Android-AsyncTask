@@ -6,8 +6,6 @@
 1. HandlerThread
 1. ExecutorService
 1. IntentService
-1. JobService
-1. AlarmManager
 
 ## Reference
 
